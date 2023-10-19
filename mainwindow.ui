@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1001</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="image_label">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>20</y>
+     <width>640</width>
+     <height>480</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 1px solid grey;
+border-radius: 10px
+}
+
+QLabel::hover{
+border: 1px solid grey;
+border-radius: 10px;
+border-color: #e38576;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="startbutton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>520</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius: 10px;
+border: 0.5px solid grey;
+} 
+
+QPushButton::hover{
+border-radius: 10px;
+border: 0.5px solid grey;
+color: #427d3b;
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Start Video</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="gesture">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>520</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-radius: 10px;
+border: 0.5px solid grey;
+} 
+
+QPushButton::hover{
+border-radius: 10px;
+border: 0.5px solid grey;
+color: #8553ad;
+} 
+</string>
+   </property>
+   <property name="text">
+    <string>Gestures</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="clearlabel">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>20</y>
+     <width>640</width>
+     <height>480</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+border: 1px solid grey;
+border-radius: 10px
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>clearlabel</zorder>
+  <zorder>image_label</zorder>
+  <zorder>startbutton</zorder>
+  <zorder>gesture</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
